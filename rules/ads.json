@@ -64,7 +64,8 @@
         "adriver.ru",
         "ad.mail.ru",
         "betweendigital.com",
-        "buzzoola.com"
+        "buzzoola.com",
+        "ufouxbwn.com"
       ]
     }
   },
@@ -91,5 +92,17 @@
     "priority": 1,
     "action": { "type": "block" },
     "condition": { "urlFilter": "||yandex.ru/ads/" }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { "urlFilter": "||aniboom.one/player/ads/" }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { "urlFilter": "/vast.php?" }
   }
 ]
