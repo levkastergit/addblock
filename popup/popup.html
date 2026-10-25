@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>BlockAds</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="../icons/icon48.png" width="28" height="28" alt="">
+    <h1>BlockAds</h1>
+  </header>
+
+  <label class="row">
+    <span>Блокировка рекламы</span>
+    <input type="checkbox" id="enabled" class="switch">
+  </label>
+
+  <label class="row" id="site-row">
+    <span>Блокировать на <b id="host">—</b></span>
+    <input type="checkbox" id="site" class="switch">
+  </label>
+
+  <p class="hint">Число на значке — сколько запросов заблокировано на этой вкладке.</p>
+  <p class="hint" id="reload-hint" hidden>Страница перезагружена, чтобы применить изменения.</p>
+
+  <section class="log">
+    <h2>Журнал запросов</h2>
+    <p class="hint">Если реклама не блокируется: начните запись, запустите видео и дождитесь рекламы, потом скопируйте журнал.</p>
+    <div class="buttons">
+      <button id="log-toggle">Начать запись</button>
+      <button id="log-copy" disabled>Скопировать</button>
+    </div>
+    <p class="hint" id="log-status"></p>
+  </section>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
